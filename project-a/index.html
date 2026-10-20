@@ -1,0 +1,88 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bloop</title>
+
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline black">Ploop</h1>
+    </div>
+
+    <!-- main content -->
+    <div id="main-wrapper">
+        <main>
+            <!-- This is where your p5 sketch will be appended and appear! -->
+        </main>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Scientific Name:</h3>
+                <p>Underwater Snake </p>
+
+                <h3 class="red">Discovered by / at:</h3>
+                <p>Ava Park, 10/15/2026</p>
+
+                <h3 class="green">Family:</h3>
+                <p>Ploop unfortunately has no family because they all got caught by fisherman.</p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>Deep underwater because it likes the darkness and the cool temperature.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>Ploop is an underwater snake. The skin color is cyan because I wanted to make the creature seem like it was glowing underwater so that it can be seen easily. Ploop has no eyes because Ploop is blind and so I also intentionally made the circles (Ploop's food) bright in color so that Ploop can at least see something glowing.</p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>Blind.</li>
+                    <li>Glows.</li>
+                    <li>Likes eating.</li>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">What we know so far about [ NAME OF YOUR CREATURE ]?</span>
+                Ploop is an underwater snake that is blind and glows. It likes to eat small glowing circles which represent little fish that are floating around in the water. It is a very independent creature and likes to be alone. It is also very curious and likes to explore its surroundings. However Ploop has its dietary restriction: Ploop can only eat small glowing circles that are yellow and cannot eat any of the red circles. Here, I chose yellow to represent vitamin D because Ploop barely gets any sunlight. Ploop doesn't like warm waters, so it stays deep underwater where sunlight barely reaches. It is also very fast and can swim very quickly.
+                <br>
+                <span class="yellow">Guidelines for human interaction with this creature</span> Humans usually catch underwater snakes like Ploop to keep as pets. But it is important to not catch Ploop. Ploop is a very independent creature and does not like to be touched or held. It is also very fast and can swim away quickly if it feels threatened. It is important to not feed Ploop any red circles because it can make Ploop sick. It is also important to not touch Ploop because it can get scared and swim away quickly.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by [Your Name] in [Current Semester]</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
+</body>
+
+</html>
